@@ -1,63 +1,87 @@
-:root {
-  --bg: #ffffff;
-  --fg: #111111;
-  --accent: #8aff6c;
-  --font: 'Inter', sans-serif;
-}
-
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
 }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
-  padding: 2rem;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
+  padding: 40px 20px;
 }
 
-header {
+.container {
+  max-width: 700px;
+  margin: auto;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  color: #8aff6c;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  color: #a0a6ad;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.features h3 {
+  margin-top: 40px;
+  color: #9d7cff;
+}
+
+ul, ol {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
 }
 
 .cta {
+  margin-top: 40px;
+}
+
+.button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: var(--accent);
-  color: #000;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 8px;
+  color: #0a0a0a;
+  background: #8aff6c;
+  transition: all 0.2s ease-in-out;
 }
 
-section {
-  margin: 3rem 0;
+.button:hover {
+  background: #6edb55;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 1rem;
+.button.secondary {
+  background: #9d7cff;
+  color: #0a0a0a;
 }
 
-ul li::before {
-  content: "• ";
-  color: var(--accent);
-  font-weight: bold;
+.button.secondary:hover {
+  background: #835eff;
 }
 
 footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 0.9rem;
+  margin-top: 60px;
   color: #666;
+  font-size: 0.9rem;
 }
