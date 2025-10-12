@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://inboxhero.pro/sitemap.xml
+
+Sitemap: https://InboxHero.pro/sitemap.xml
