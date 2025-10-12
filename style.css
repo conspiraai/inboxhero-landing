@@ -15,6 +15,20 @@
 .nav-links a { color: var(--ih-text-dim); font-weight: 600; }
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: block;
+  filter: drop-shadow(0 0 10px var(--ih-glow));
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ih-text);
+}
+
 /* ===== HERO ===== */
 #hero-section {
   padding: 110px 20px 80px;
